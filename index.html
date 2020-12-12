@@ -50,12 +50,13 @@
     </address>
       </div>
     </header>
-    <main>
+    <main class="main">
         <!-- Hero -->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button class="button" type="button">Заказать услугу</button>
+            <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </section>
+        </div>
         <!-- Особенности -->
         <section class="features">
             <div class="container">
@@ -109,9 +110,9 @@
             <div class="container">
                 <h2 class="about-title">Чем мы занимаемся</h2>
                 <ul class="list">
-                    <li class="about-item"><img src="images/main/box1.jpg" alt="работа с десктопными приложениями" width="370" height="294"></li>
-                    <li class="about-item"><img src="images/main/box2.jpg" alt="работа с телефонными приложениями" width="370" height="294"></li>
-                    <li class="about-item"><img src="images/main/box3.jpg" alt="работа с дизайном" width="370" height="294"></li>
+                    <li class="about-item"><img src="images/main/box1.jpg" alt="работа с десктопными приложениями" width="370" height="294"><p>Десктопные приложения</p></li>
+                    <li class="about-item"><img src="images/main/box2.jpg" alt="работа с телефонными приложениями" width="370" height="294"><p>Мобильные приложения</p></li>
+                    <li class="about-item"><img src="images/main/box3.jpg" alt="работа с дизайном" width="370" height="294"><p>Дизайнерские решения</p></li>
                 </ul>
             </div>
         </section>
@@ -371,5 +372,15 @@
             </div>
         </div>   
     </footer>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class="close">
+                    <use href="./images/svg/sprite.svg#icon-vector"></use>
+                </svg>
+            </button>
+        </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
